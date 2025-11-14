@@ -6,9 +6,9 @@ import os
 filename = 'pass.txt'
 if os.path.isfile(filename):
 	with open(filename) as f:
-	    passwords = f.read().splitlines()
-	    if (len(passwords) > 0):
-	    	print ('%s Passwords loads successfully' % len(passwords))
+		passwords = f.read().splitlines()
+		if (len(passwords) > 0):
+			print ('%s Passwords loads successfully' % len(passwords))
 else:
 	print ('Please create passwords file (pass.txt)')
 	exit()
